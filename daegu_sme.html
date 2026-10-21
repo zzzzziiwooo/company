@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대구경북지방중소벤처기업청 - 지역 경제의 든든한 동반자</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Pretendard Font -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  
+  <style>
+    body {
+      font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    }
+    .hero-pattern {
+      background-color: #0d1b2a;
+      background-image: radial-gradient(#1e3a5f 1.5px, transparent 1.5px), radial-gradient(#1e3a5f 1.5px, #0d1b2a 1.5px);
+      background-size: 60px 60px;
+      background-position: 0 0, 30px 30px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- 1. 최상단 바로가기 알림바 -->
+  <div class="bg-blue-900 text-blue-100 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="bg-blue-700 text-white px-2 py-0.5 rounded font-bold">안내</span>
+        <span>대구·경북 중소기업, 벤처기업, 소상공인을 위한 원스톱 지원 포털</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <span class="flex items-center gap-1"><i data-lucide="phone-call" class="w-3.5 h-3.5"></i> 중소기업 통합콜센터 <strong>1357</strong></span>
+        <span class="hidden sm:inline">|</span>
+        <span class="flex items-center gap-1"><i data-lucide="building" class="w-3.5 h-3.5"></i> 대경청 대표전화 053-626-2601</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. 네비게이션 헤더 -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- 로고 -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-blue-700 via-indigo-600 to-sky-500 flex items-center justify-center text-white shadow-md shadow-blue-600/20 group-hover:scale-105 transition-transform">
+            <i data-lucide="briefcase" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xl font-extrabold tracking-tight text-slate-900">대구경북지방중소벤처기업청</span>
+              <span class="hidden sm:inline-block text-xs px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 font-semibold border border-blue-200">중소벤처기업부</span>
+            </div>
+            <p class="text-xs text-slate-500 font-medium tracking-wide">DAEGU & GYEONGBUK REGIONAL SMBA</p>
+          </div>
+        </a>
+
+        <!-- 데스크톱 메뉴 -->
+        <nav class="hidden lg:flex items-center space-x-1 font-semibold text-sm">
+          <a href="#about" class="px-3.5 py-2 text-slate-600 hover:text-blue-700 hover:bg-slate-100 rounded-lg transition">기관소개</a>
+          <a href="#services" class="px-3.5 py-2 text-slate-600 hover:text-blue-700 hover:bg-slate-100 rounded-lg transition">주요업무</a>
+          <a href="#checklist" class="px-3.5 py-2 text-blue-700 font-bold bg-blue-50/80 border border-blue-200 rounded-lg hover:bg-blue-100 transition flex items-center gap-1.5">
+            <i data-lucide="clipboard-check" class="w-4 h-4 text-blue-700"></i>
+            <span>나의 혜택 진단</span>
+          </a>
+          <a href="#trends" class="px-3.5 py-2 text-slate-600 hover:text-blue-700 hover:bg-slate-100 rounded-lg transition">정책동향</a>
+          <a href="#news" class="px-3.5 py-2 text-slate-600 hover:text-blue-700 hover:bg-slate-100 rounded-lg transition">최신뉴스</a>
+          <a href="#location" class="px-3.5 py-2 text-slate-600 hover:text-blue-700 hover:bg-slate-100 rounded-lg transition">오시는길</a>
+          <a href="https://www.mss.go.kr/site/daegu/main.do" target="_blank" rel="noopener noreferrer" class="ml-2 inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-blue-700 text-white hover:bg-blue-800 shadow-sm transition">
+            <span>공식 누리집</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </nav>
+
+        <!-- 모바일 햄버거 버튼 -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- 모바일 드롭다운 -->
+    <div id="mobileMenu" class="hidden lg:hidden border-b border-slate-200 bg-white px-4 pt-3 pb-6 space-y-2">
+      <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">기관소개</a>
+      <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">주요업무</a>
+      <a href="#checklist" class="block px-3 py-2 rounded-md text-base font-bold text-blue-700 bg-blue-50">나의 혜택 진단 체크리스트</a>
+      <a href="#trends" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">핵심 정책동향</a>
+      <a href="#news" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">최신 보도 및 뉴스</a>
+      <a href="#location" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">오시는 길 & 연락처</a>
+      <a href="https://www.mss.go.kr/site/daegu/main.do" target="_blank" class="block px-3 py-2 rounded-md text-base font-bold text-blue-700 bg-blue-50">공식 누리집 바로가기</a>
+    </div>
+  </header>
+
+  <!-- 3. 히어로 섹션 -->
+  <section class="relative hero-pattern text-white py-24 sm:py-32 overflow-hidden">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-6">
+        
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold tracking-wide">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          <span>대구·경북 지역 산업의 심장을 다시 뛰게 합니다</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+          지역 기업의 혁신 성장과<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-blue-200 to-indigo-300">
+            소상공인의 든든한 버팀목
+          </span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+          <strong>대구경북지방중소벤처기업청</strong>은 지역 내 벤처·스타트업 발굴, 중소제조기업의 기술혁신(R&D), 
+          해외 수출 및 판로 지원, 소상공인 경영 안정을 위해 정책과 현장을 잇는 중앙정부의 지역 총괄 컨트롤타워입니다.
+        </p>
+
+        <div class="flex flex-wrap gap-4 pt-3">
+          <a href="#checklist" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold shadow-lg shadow-blue-600/30 transition transform hover:-translate-y-0.5">
+            <i data-lucide="clipboard-check" class="w-5 h-5 text-sky-200"></i>
+            <span>나는 어떤 도움을 받을 수 있을까? (진단하기)</span>
+          </a>
+          <a href="#services" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold backdrop-blur-md transition">
+            <span>주요 지원업무 안내</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#news" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold transition">
+            <i data-lucide="newspaper" class="w-4 h-4 text-indigo-400"></i>
+            <span>최신 뉴스기사</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 핵심 현황 지표 4선 -->
+    <div class="relative mt-16 border-t border-slate-700/60 bg-slate-900/40 backdrop-blur-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-sky-400">약 50만+</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1">대구·경북 중소기업 및 소상공인</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-sky-400">1:1 밀착</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1">비즈니스지원단 전문 컨설팅</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-sky-400">초격차 10대</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1">미래 모빌리티·로봇 딥테크 육성</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-sky-400">1357</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1">중소기업 전문 통합 상담 콜센터</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 기관 소개 (누구나 알기 쉬운 요약) -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-blue-600 font-bold tracking-wider text-xs uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-100">About DG SMBA</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">대구경북지방중소벤처기업청은 어떤 곳인가요?</h2>
+        <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+        <p class="text-slate-600 mt-4 leading-relaxed">
+          중소벤처기업부의 특별지방행정기관으로서 대구광역시와 경상북도 전역의 기업 현장을 지킵니다. 
+          어려운 행정 절차 대신, 기업과 소상공인이 필요로 하는 자금, 기술, 판로, 규제개선을 가장 가까이에서 돕습니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-2xl bg-gradient-to-b from-blue-50/60 to-white border border-blue-100 hover:shadow-xl hover:border-blue-300 transition duration-300 group">
+          <div class="w-14 h-14 rounded-xl bg-blue-600 text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-md shadow-blue-600/30">
+            <i data-lucide="handshake" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">현장과 정부의 연결고리</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            중앙정부의 수많은 지원 정책이 지역 골목상권과 산업단지 기업들에게 빠짐없이 닿을 수 있도록 직접 발로 뛰며 안내합니다.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-gradient-to-b from-indigo-50/60 to-white border border-indigo-100 hover:shadow-xl hover:border-indigo-300 transition duration-300 group">
+          <div class="w-14 h-14 rounded-xl bg-indigo-600 text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-md shadow-indigo-600/30">
+            <i data-lucide="rocket" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">미래 신산업 혁신 액셀러레이터</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            대구·경북의 주력인 로봇, 미래모빌리티, ICT, 바이오 등 차세대 딥테크 벤처가 유니콘 기업으로 도약할 수 있도록 집중 투자와 R&D를 연계합니다.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-gradient-to-b from-amber-50/60 to-white border border-amber-100 hover:shadow-xl hover:border-amber-300 transition duration-300 group">
+          <div class="w-14 h-14 rounded-xl bg-amber-500 text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-md shadow-amber-500/30">
+            <i data-lucide="store" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">골목상권과 전통시장의 안전망</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            고금리, 매출 부진으로 고통받는 자영업자를 위한 긴급 경영안정자금, 온누리상품권 디지털화, 스마트 상점 전환을 지원합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 주요 업무 상세 섹션 (쉽게 이해하는 4대 기능) -->
+  <section id="services" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-blue-600 font-bold tracking-wider text-xs uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Core Services</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">국민과 기업을 위한 4대 핵심 업무</h2>
+        <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+        <p class="text-slate-600 mt-4 leading-relaxed">
+          창업부터 기술개발, 해외 수출, 골목상인 지원까지 다방면의 정책을 종합적으로 수행하고 있습니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- 1. 창업 & 벤처 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-lg transition">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold">
+              <i data-lucide="zap" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-blue-600 uppercase">Startup & Venture</span>
+              <h3 class="text-xl font-extrabold text-slate-900">창업벤처 육성 및 스타트업 생태계 조성</h3>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            혁신적인 아이디어를 가진 청년 창업가와 기술 기반 스타트업을 초기 단계부터 체계적으로 육성합니다.
+          </p>
+          <ul class="text-xs sm:text-sm text-slate-700 space-y-2.5 bg-slate-50 p-4 rounded-2xl">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0"></i>
+              <span><strong>대구경북 스타트업 페스티벌:</strong> 우수 스타트업 전시 및 대기업 오픈이노베이션 매칭</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0"></i>
+              <span><strong>초격차 스타트업 프로젝트:</strong> 미래 로봇, 반도체, 이차전지 등 10대 첨단분야 지원</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0"></i>
+              <span><strong>벤처확인제도 운영:</strong> 세제 혜택과 특례 보증을 위한 벤처기업 인증 지원</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2. 중소기업 혁신 및 R&D -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-lg transition">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">
+              <i data-lucide="cpu" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-indigo-600 uppercase">R&D & Manufacturing</span>
+              <h3 class="text-xl font-extrabold text-slate-900">기술혁신(R&D) 및 스마트공장 보급</h3>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            전통 제조업의 비중이 높은 지역 특성에 맞춰 디지털 전환과 기술 자립을 집중 지원합니다.
+          </p>
+          <ul class="text-xs sm:text-sm text-slate-700 space-y-2.5 bg-slate-50 p-4 rounded-2xl">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+              <span><strong>중소기업 혁신바우처:</strong> 제조 소기업의 시제품 제작, 마케팅, 인증 맞춤 바우처 제공</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+              <span><strong>첫걸음 R&D:</strong> 정부 R&D 경험이 없는 유망 기업 대상 기술개발 기회 부여</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+              <span><strong>공정 스마트화:</strong> 인공지능(AI)과 사물인터넷(IoT)을 접목한 스마트 제조혁신</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 3. 판로 및 글로벌 수출 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-lg transition">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+              <i data-lucide="globe-2" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-emerald-600 uppercase">Export & Market</span>
+              <h3 class="text-xl font-extrabold text-slate-900">공공조달 판로개척 및 글로벌 수출 지원</h3>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            기술은 뛰어나지만 판로 개척이 어려운 기업에게 공공기관 납품과 글로벌 시장 진출 길을 열어줍니다.
+          </p>
+          <ul class="text-xs sm:text-sm text-slate-700 space-y-2.5 bg-slate-50 p-4 rounded-2xl">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"></i>
+              <span><strong>글로벌 강소기업 육성:</strong> 수출 500만 달러 이상 유망 기업의 해외 마케팅 집중 지원</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"></i>
+              <span><strong>공공구매상담회 개최:</strong> 한국수력원자력 등 16개 공공기관과 1:1 매칭 조달시장 진출</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"></i>
+              <span><strong>수출바우처 사업:</strong> 해외 전시회, 바이어 발굴, 국제 인증 비용 패키지 지원</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 4. 소상공인 & 전통시장 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-lg transition">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold">
+              <i data-lucide="users" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-amber-600 uppercase">Microenterprise</span>
+              <h3 class="text-xl font-extrabold text-slate-900">소상공인 재기 지원 및 전통시장 활성화</h3>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            서민 경제의 뿌리인 소상공인의 안전망을 구축하고 전통시장에 젊은 활기를 불어넣습니다.
+          </p>
+          <ul class="text-xs sm:text-sm text-slate-700 space-y-2.5 bg-slate-50 p-4 rounded-2xl">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0"></i>
+              <span><strong>맞춤형 원스톱 상담:</strong> 금융자금, 부채 채무조정, 폐업 후 재도전 컨설팅</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0"></i>
+              <span><strong>온누리상품권 & 지역 배달앱:</strong> '대구로' 등 지역 상권 특화 플랫폼 연계 확대</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0"></i>
+              <span><strong>화재공제 및 안전시설:</strong> 전통시장 노후 전선 정비 및 시설 현대화 사업</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 국민/기업 맞춤형 인터랙티브 체크리스트 및 자가진단 설문 -->
+  <section id="checklist" class="py-20 bg-gradient-to-b from-white via-blue-50/40 to-slate-50 border-t border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-blue-700 font-bold tracking-wider text-xs uppercase bg-blue-100 px-3.5 py-1.5 rounded-full border border-blue-200">
+          Self-Diagnostic Checklist & Survey
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3">
+          "나는 이 기관으로부터 어떤 도움을 받을 수 있을까?"
+        </h2>
+        <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+        <p class="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed">
+          어려운 공문이나 복잡한 법률 용어를 몰라도 괜찮습니다.<br class="hidden sm:inline" />
+          현재 겪고 계신 상황이나 관심사를 체크하시면, <strong>대구경북중기청의 맞춤 혜택과 신청 경로</strong>를 한눈에 정리해 드립니다.
+        </p>
+      </div>
+
+      <!-- 설문 컨테이너 박스 -->
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
+        
+        <div class="bg-slate-900 text-white px-6 sm:px-8 py-4 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2 text-sm font-bold">
+            <span class="w-6 h-6 rounded-full bg-blue-500 text-white text-xs flex items-center justify-center">Q</span>
+            <span>국민 맞춤 혜택 자가진단 설문 (다중 선택 가능)</span>
+          </div>
+          <button onclick="resetChecklist()" class="text-xs text-slate-400 hover:text-white flex items-center gap-1 transition">
+            <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+            선택 초기화
+          </button>
+        </div>
+
+        <div class="p-6 sm:p-10 space-y-8">
+          
+          <!-- 문항 1: 사용자 기본 신분/자격 -->
+          <div>
+            <label class="block text-sm font-extrabold text-slate-900 mb-3 flex items-center gap-2">
+              <span class="w-5 h-5 rounded bg-blue-100 text-blue-700 text-xs flex items-center justify-center font-bold">1</span>
+              <span>현재 본인의 현황에 가장 가까운 것을 선택해 주세요.</span>
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3" id="roleSelection">
+              <label class="cursor-pointer border-2 border-slate-200 rounded-2xl p-4 flex flex-col justify-between hover:border-blue-500 hover:bg-blue-50/30 transition has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50/60 has-[:checked]:shadow-sm">
+                <div class="flex items-start justify-between">
+                  <span class="font-bold text-sm text-slate-900">예비·청년 창업가</span>
+                  <input type="radio" name="userRole" value="startup" class="accent-blue-600 w-4 h-4 mt-0.5" onchange="evaluateChecklist()">
+                </div>
+                <p class="text-xs text-slate-500 mt-2">아이디어를 사업화하고 싶거나 창업 3년 이내인 기업</p>
+              </label>
+
+              <label class="cursor-pointer border-2 border-slate-200 rounded-2xl p-4 flex flex-col justify-between hover:border-blue-500 hover:bg-blue-50/30 transition has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50/60 has-[:checked]:shadow-sm">
+                <div class="flex items-start justify-between">
+                  <span class="font-bold text-sm text-slate-900">소상공인·자영업자</span>
+                  <input type="radio" name="userRole" value="merchant" class="accent-blue-600 w-4 h-4 mt-0.5" onchange="evaluateChecklist()">
+                </div>
+                <p class="text-xs text-slate-500 mt-2">식당, 도소매, 전통시장, 골목상권 1인 또는 소규모 매장</p>
+              </label>
+
+              <label class="cursor-pointer border-2 border-slate-200 rounded-2xl p-4 flex flex-col justify-between hover:border-blue-500 hover:bg-blue-50/30 transition has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50/60 has-[:checked]:shadow-sm">
+                <div class="flex items-start justify-between">
+                  <span class="font-bold text-sm text-slate-900">제조·기술 중소기업</span>
+                  <input type="radio" name="userRole" value="sme" class="accent-blue-600 w-4 h-4 mt-0.5" onchange="evaluateChecklist()">
+                </div>
+                <p class="text-xs text-slate-500 mt-2">대구·경북 산단 소재 부품, 기계, 섬유, IT 등 제조 공장/기업</p>
+              </label>
+
+              <label class="cursor-pointer border-2 border-slate-200 rounded-2xl p-4 flex flex-col justify-between hover:border-blue-500 hover:bg-blue-50/30 transition has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50/60 has-[:checked]:shadow-sm">
+                <div class="flex items-start justify-between">
+                  <span class="font-bold text-sm text-slate-900">일반 국민·취업준비</span>
+                  <input type="radio" name="userRole" value="citizen" class="accent-blue-600 w-4 h-4 mt-0.5" onchange="evaluateChecklist()">
+                </div>
+                <p class="text-xs text-slate-500 mt-2">창업에 관심 있는 주민, 중소기업 취업 희망 청년, 온누리상품권 소비자</p>
+              </label>
+            </div>
+          </div>
+
+          <!-- 문항 2: 구체적 고민 및 필요 분야 -->
+          <div>
+            <label class="block text-sm font-extrabold text-slate-900 mb-3 flex items-center gap-2">
+              <span class="w-5 h-5 rounded bg-blue-100 text-blue-700 text-xs flex items-center justify-center font-bold">2</span>
+              <span>현재 가장 필요하거나 고민인 항목을 모두 체크해 주세요. (중복 선택)</span>
+            </label>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="needChecklistGroup">
+              
+              <label class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50/50 has-[:checked]:border-blue-400">
+                <input type="checkbox" name="needs" value="funding" class="accent-blue-600 w-4 h-4 mt-0.5 rounded" onchange="evaluateChecklist()">
+                <div>
+                  <span class="font-bold text-sm text-slate-900">저금리 정책자금 및 긴급 경영안정 지원</span>
+                  <p class="text-xs text-slate-500 mt-0.5">고금리 부담 완화, 시설자금·운전자금 융자 및 보증서 발급이 필요한 경우</p>
+                </div>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50/50 has-[:checked]:border-blue-400">
+                <input type="checkbox" name="needs" value="rnd" class="accent-blue-600 w-4 h-4 mt-0.5 rounded" onchange="evaluateChecklist()">
+                <div>
+                  <span class="font-bold text-sm text-slate-900">기술개발(R&D) 지원 및 시제품 제작</span>
+                  <p class="text-xs text-slate-500 mt-0.5">신제품 개발비, 연구설비 구축, 첫걸음 R&D 정부 보조금 지원이 필요한 경우</p>
+                </div>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50/50 has-[:checked]:border-blue-400">
+                <input type="checkbox" name="needs" value="market" class="accent-blue-600 w-4 h-4 mt-0.5 rounded" onchange="evaluateChecklist()">
+                <div>
+                  <span class="font-bold text-sm text-slate-900">공공기관 납품 판로 및 대기업 협력</span>
+                  <p class="text-xs text-slate-500 mt-0.5">조달청 나라장터 진입, 공공기관 1:1 구매상담회, 대기업 오픈이노베이션 매칭</p>
+                </div>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50/50 has-[:checked]:border-blue-400">
+                <input type="checkbox" name="needs" value="export" class="accent-blue-600 w-4 h-4 mt-0.5 rounded" onchange="evaluateChecklist()">
+                <div>
+                  <span class="font-bold text-sm text-slate-900">해외 진출, 바이어 발굴 및 해외 규격인증</span>
+                  <p class="text-xs text-slate-500 mt-0.5">수출바우처, 해외 박람회 부스 지원, 글로벌 강소기업 육성 지원</p>
+                </div>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50/50 has-[:checked]:border-blue-400">
+                <input type="checkbox" name="needs" value="consulting" class="accent-blue-600 w-4 h-4 mt-0.5 rounded" onchange="evaluateChecklist()">
+                <div>
+                  <span class="font-bold text-sm text-slate-900">세무·노무·법률 전문가 1:1 무료 상담 및 규제 해소</span>
+                  <p class="text-xs text-slate-500 mt-0.5">비즈니스지원단 무료 파견, 불공정거래 구제, 불합리한 행정 규제 애로 건의</p>
+                </div>
+              </label>
+
+              <label class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition has-[:checked]:bg-blue-50/50 has-[:checked]:border-blue-400">
+                <input type="checkbox" name="needs" value="recovery" class="accent-blue-600 w-4 h-4 mt-0.5 rounded" onchange="evaluateChecklist()">
+                <div>
+                  <span class="font-bold text-sm text-slate-900">스마트상점 전환, 채무조정 및 폐업·재도전</span>
+                  <p class="text-xs text-slate-500 mt-0.5">키오스크·테이블오더 지원, 온누리상품권 가맹, 희망리턴패키지(철거비·재취업)</p>
+                </div>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- 진단 결과 리포트 박스 -->
+          <div id="diagnosticOutput" class="rounded-2xl border-2 border-blue-200 bg-blue-50/40 p-6 sm:p-8 space-y-6">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow">
+                <i data-lucide="check-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-blue-700 uppercase">진단 리포트</span>
+                <h4 id="reportTitle" class="text-lg sm:text-xl font-extrabold text-slate-900">
+                  위 설문 문항을 체크해 주시면 맞춤 지원 혜택이 도출됩니다.
+                </h4>
+              </div>
+            </div>
+
+            <!-- 매칭된 지원 목록 카드 영역 -->
+            <div id="matchedBenefitsList" class="space-y-3">
+              <p class="text-sm text-slate-500 leading-relaxed">
+                현재 상황에 맞는 신분과 필요 항목을 1개 이상 선택하시면, 대구경북지방중소벤처기업청 및 유관기관에서 제공하는 핵심 수혜 프로그램과 즉시 신청 경로가 이곳에 나타납니다.
+              </p>
+            </div>
+
+            <!-- 직통 문의 가이드 안내 -->
+            <div class="pt-4 border-t border-blue-200/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-slate-600">
+              <div class="flex items-center gap-2">
+                <i data-lucide="help-circle" class="w-4 h-4 text-blue-600 flex-shrink-0"></i>
+                <span>정확한 지원 자격 검토나 추가 상담은 <strong>중소기업통합콜센터(국번없이 1357)</strong> 또는 대경청 상담실(053-626-2601)로 문의하세요.</span>
+              </div>
+              <a href="https://www.mss.go.kr/site/daegu/main.do" target="_blank" class="px-3.5 py-2 rounded-lg bg-blue-700 text-white font-bold hover:bg-blue-800 transition whitespace-nowrap flex items-center gap-1">
+                <span>대경청 대표 누리집</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. 핵심 정책동향 3선 -->
+  <section id="trends" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-blue-600 font-bold tracking-wider text-xs uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Key Trends</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">지금 대구·경북 중기 정책의 핵심 동향</h2>
+        <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+        <p class="text-slate-600 mt-4 leading-relaxed">
+          대경중기청이 최근 역점을 두고 추진 중인 3대 핵심 정책 트렌드를 소개합니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-blue-300 transition">
+          <div class="text-xs font-bold text-blue-600 mb-2 flex items-center gap-1">
+            <i data-lucide="book-open" class="w-4 h-4"></i>
+            정보 불균형 해소
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">종합지원정보지 '비빔밥' 발간</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            지역 내 15개 유관기관의 100여 개 지원사업 정보를 한 권에 맛있게 비벼낸 종합안내서 '비빔밥'을 정기 배포하여 중소기업의 정보 접근성을 혁신하고 있습니다.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-blue-300 transition">
+          <div class="text-xs font-bold text-indigo-600 mb-2 flex items-center gap-1">
+            <i data-lucide="sparkle" class="w-4 h-4"></i>
+            AX (AI 전환) 촉진
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">중소기업 'AI로 일하는 법' 확산</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            인력난을 겪는 제조 및 서비스 소기업 실무자를 위해 생성형 AI 활용 실무 워크숍 및 모두의 창업 솔루션을 도입하여 기업 생산성을 획기적으로 끌어올립니다.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-blue-300 transition">
+          <div class="text-xs font-bold text-emerald-600 mb-2 flex items-center gap-1">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
+            무료 현장 클리닉
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">비즈니스지원단 1:1 무료 상담</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            변호사, 세무사, 노무사, 경영지도사 등 각 분야 베테랑 전문가가 청사 내 상담실 및 기업 현장을 직접 찾아가 경영 애로를 무료로 진단해 드립니다.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. 최신 뉴스 기사 및 보도자료 -->
+  <section id="news" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-blue-600 font-bold tracking-wider text-xs uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Press & News</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">최신 뉴스 및 주요 보도</h2>
+          <p class="text-slate-600 text-sm mt-2">언론에 보도된 대구경북지방중소벤처기업청의 생생한 활동 소식을 확인해 보세요.</p>
+        </div>
+        <a href="https://www.mss.go.kr/site/daegu/ex/bbs/List.do?cbIdx=214" target="_blank" rel="noopener noreferrer" class="mt-4 md:mt-0 inline-flex items-center gap-1 text-sm font-bold text-blue-700 hover:text-blue-800">
+          <span>대경청 보도자료 게시판 바로가기</span>
+          <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- 뉴스 그리드 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+              <span class="font-semibold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full">전자신문 ETNEWS</span>
+              <span>경제/산업</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 leading-snug line-clamp-2 hover:text-blue-700 transition">
+              대구경북중기청, 지역 중소·벤처기업 '초격차 스타트업 커넥팅 데이' 개최
+            </h3>
+            <p class="text-xs text-slate-600 mt-2.5 line-clamp-3 leading-relaxed">
+              삼성전자, 에코프로파트너스 등 앵커 대기업 및 대형 투자사와 대구경북 딥테크 혁신 스타트업 간의 오픈이노베이션 매칭과 사업화 자금 지원을 추진했습니다.
+            </p>
+          </div>
+          <div class="px-6 pb-5 pt-2 border-t border-slate-100">
+            <a href="https://www.etnews.com" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-blue-700 flex items-center gap-1 hover:underline">
+              <span>기사 전문 확인하기 (전자신문)</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+              <span class="font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full">대구MBC 뉴스</span>
+              <span>방송뉴스</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 leading-snug line-clamp-2 hover:text-blue-700 transition">
+              대구경북 중소기업·소상공인 지원사업 종합설명회 및 찾아가는 상담회 운영
+            </h3>
+            <p class="text-xs text-slate-600 mt-2.5 line-clamp-3 leading-relaxed">
+              17개 유관기관이 총집결해 연간 수조 원에 달하는 정책자금, R&D, 수출 바우처의 지원 일정과 신청 절차를 권역별로 상세 안내했습니다.
+            </p>
+          </div>
+          <div class="px-6 pb-5 pt-2 border-t border-slate-100">
+            <a href="https://www.dgmbc.com" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-blue-700 flex items-center gap-1 hover:underline">
+              <span>보도 영상 및 기사 보기 (대구MBC)</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+              <span class="font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-0.5 rounded-full">경북일보</span>
+              <span>지역경제</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 leading-snug line-clamp-2 hover:text-blue-700 transition">
+              대경중기청, 지역 제조 소기업 맞춤형 '중소기업 혁신바우처' 집중 지원
+            </h3>
+            <p class="text-xs text-slate-600 mt-2.5 line-clamp-3 leading-relaxed">
+              제조 소기업의 생산성 혁신과 스마트화, 마케팅 역량 강화를 위해 기업당 최대 수천만 원 상당의 바우처를 제공하는 지원사업을 공고했습니다.
+            </p>
+          </div>
+          <div class="px-6 pb-5 pt-2 border-t border-slate-100">
+            <a href="https://www.kyongbuk.co.kr" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-blue-700 flex items-center gap-1 hover:underline">
+              <span>기사 원문 읽기 (경북일보)</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+              <span class="font-semibold text-purple-600 bg-purple-50 px-2.5 py-0.5 rounded-full">뉴스프리존</span>
+              <span>공공조달</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 leading-snug line-clamp-2 hover:text-blue-700 transition">
+              한수원 등 16개 공공기관 참여 '대구경북 중소기업 공공구매상담회' 성료
+            </h3>
+            <p class="text-xs text-slate-600 mt-2.5 line-clamp-3 leading-relaxed">
+              우수한 기술을 보유하고도 판로를 찾지 못했던 지역 우수 중소기업들이 대형 공공기관 구매 담당관과 1대1 구매 상담을 펼쳤습니다.
+            </p>
+          </div>
+          <div class="px-6 pb-5 pt-2 border-t border-slate-100">
+            <a href="https://www.newsfreezone.co.kr" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-blue-700 flex items-center gap-1 hover:underline">
+              <span>기사 보기 (뉴스프리존)</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+              <span class="font-semibold text-amber-600 bg-amber-50 px-2.5 py-0.5 rounded-full">경북신문</span>
+              <span>글로벌수출</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 leading-snug line-clamp-2 hover:text-blue-700 transition">
+              대구·경북 글로벌 강소기업 지정 및 현판 수여… 해외 진출 총력 뒷받침
+            </h3>
+            <p class="text-xs text-slate-600 mt-2.5 line-clamp-3 leading-relaxed">
+              수출 잠재력이 높은 지역 유망 기업 43개사를 선정하여 해외 마케팅 패키지와 전용 보증·자금을 원스톱으로 지원합니다.
+            </p>
+          </div>
+          <div class="px-6 pb-5 pt-2 border-t border-slate-100">
+            <a href="https://www.kbsm.net" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-blue-700 flex items-center gap-1 hover:underline">
+              <span>기사 보기 (경북신문)</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-gradient-to-br from-blue-900 to-indigo-950 text-white rounded-2xl overflow-hidden p-6 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 text-xs text-blue-200 mb-3 font-semibold">
+              <i data-lucide="bell" class="w-3.5 h-3.5"></i>
+              <span>공식 정책 알림</span>
+            </div>
+            <h3 class="text-base font-bold leading-snug">
+              대구경북지방중소벤처기업청 공식 보도자료 및 공고 원문 실시간 열람
+            </h3>
+            <p class="text-xs text-slate-300 mt-2.5 leading-relaxed">
+              전통시장 및 상점가 지원사업, R&D 지원사업 공고, 중소기업 확인서 발급 등 매일 업데이트되는 정부 공고를 확인하세요.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 mt-4">
+            <a href="https://www.mss.go.kr/site/daegu/ex/bbs/List.do?cbIdx=214" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-sky-300 hover:text-white flex items-center gap-1">
+              <span>중기부 공식 보도자료 보러가기</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. 찾아오시는 길 & 청사 안내 -->
+  <section id="location" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-blue-600 font-bold tracking-wider text-xs uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Location & Contact</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">오시는 길 및 안내</h2>
+        <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+        <p class="text-slate-600 mt-4 leading-relaxed">
+          대구 본청과 경북 북부지역 기업 지원을 위한 경북북부사무소를 함께 운영하고 있습니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- 대구 본청 정보 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+          <div class="border-b border-slate-100 pb-4">
+            <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full">본청 (성서첨단산업단지)</span>
+            <h3 class="text-2xl font-bold text-slate-900 mt-2">대구경북지방중소벤처기업청 본청</h3>
+            <p class="text-sm text-slate-600 mt-1 flex items-center gap-1.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-blue-600 flex-shrink-0"></i>
+              <span>대구광역시 달서구 성서4차첨단로 122-11 (월암동 1111)</span>
+              <button onclick="copyAddr('대구광역시 달서구 성서4차첨단로 122-11')" class="text-xs text-blue-600 font-bold underline ml-1 hover:text-blue-800">복사</button>
+            </p>
+          </div>
+
+          <div class="space-y-4 text-xs sm:text-sm text-slate-600">
+            <div>
+              <strong class="text-slate-900 block mb-1">📞 대표 연락처</strong>
+              <p>대표전화: 053-626-2601 / 팩스: 053-626-2602 / 중소기업 상담: 1357</p>
+            </div>
+            <div>
+              <strong class="text-slate-900 block mb-1">🚇 대중교통 이용 시</strong>
+              <p>대구 도시철도 2호선 성서산업단지역 또는 계명대역 하차 후 시내버스 환승(달서1, 달서3 등) 또는 택시 이용 (약 10~15분)</p>
+            </div>
+            <div>
+              <strong class="text-slate-900 block mb-1">🚗 승용차 및 주차</strong>
+              <p>중부내륙고속도로지선 남대구IC 진출 후 성서4차산업단지 방면 이동. 청사 내 민원인 전용 주차장 무료 이용 가능</p>
+            </div>
+          </div>
+
+          <div class="pt-4 flex gap-3">
+            <a href="https://map.kakao.com/link/search/대구경북지방중소벤처기업청" target="_blank" class="flex-1 py-2.5 rounded-xl bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-bold text-xs text-center transition">
+              카카오맵 길찾기
+            </a>
+            <a href="https://map.naver.com/p/search/대구경북지방중소벤처기업청" target="_blank" class="flex-1 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs text-center transition">
+              네이버지도 길찾기
+            </a>
+          </div>
+        </div>
+
+        <!-- 경북북부사무소 정보 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+          <div class="border-b border-slate-100 pb-4">
+            <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-full">북부 권역 전담</span>
+            <h3 class="text-2xl font-bold text-slate-900 mt-2">경북북부사무소 (안동)</h3>
+            <p class="text-sm text-slate-600 mt-1 flex items-center gap-1.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-indigo-600 flex-shrink-0"></i>
+              <span>경상북도 안동시 축제5길 17, 3층 (한국생명과학고 부근)</span>
+              <button onclick="copyAddr('경상북도 안동시 축제5길 17')" class="text-xs text-indigo-600 font-bold underline ml-1 hover:text-indigo-800">복사</button>
+            </p>
+          </div>
+
+          <div class="space-y-4 text-xs sm:text-sm text-slate-600">
+            <div>
+              <strong class="text-slate-900 block mb-1">📞 관할 권역 및 전화</strong>
+              <p>전화: 054-853-4402 | 관할: 안동, 영주, 상주, 문경, 예천 등 경북 북부 시·군</p>
+            </div>
+            <div>
+              <strong class="text-slate-900 block mb-1">🏢 주요 역할</strong>
+              <p>북부권 농식품 가공 중소기업 육성, 전통시장 및 소상공인 현장 지원, 규제 애로 발굴 접수창구</p>
+            </div>
+            <div>
+              <strong class="text-slate-900 block mb-1">💡 업무 시간</strong>
+              <p>평일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00, 주말 및 공휴일 휴무)</p>
+            </div>
+          </div>
+
+          <div class="pt-4 flex gap-3">
+            <a href="https://map.kakao.com/link/search/대구경북지방중소벤처기업청 경북북부사무소" target="_blank" class="flex-1 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs text-center transition">
+              카카오맵 바로보기
+            </a>
+            <a href="https://map.naver.com/p/search/대구경북지방중소벤처기업청 경북북부사무소" target="_blank" class="flex-1 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs text-center transition">
+              네이버지도 바로보기
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 토스트 알림 -->
+      <div id="copyToast" class="fixed bottom-6 right-6 hidden bg-slate-900 text-white text-xs px-4 py-3 rounded-xl shadow-xl z-50 flex items-center gap-2">
+        <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+        <span id="copyToastMsg">주소가 복사되었습니다.</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. 푸터 -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-800 pb-6">
+        <div>
+          <span class="text-white text-base font-bold">대구경북지방중소벤처기업청</span>
+          <p class="text-slate-500 mt-0.5">중소벤처기업부 소속 지방행정기관</p>
+        </div>
+        <div class="flex flex-wrap gap-4 text-slate-300">
+          <a href="https://www.mss.go.kr" target="_blank" class="hover:text-white transition">중소벤처기업부</a>
+          <a href="https://www.sbiz.or.kr" target="_blank" class="hover:text-white transition">소상공인시장진흥공단</a>
+          <a href="https://www.kosmes.or.kr" target="_blank" class="hover:text-white transition">중소벤처기업진흥공단</a>
+          <a href="https://www.kibo.or.kr" target="_blank" class="hover:text-white transition">기술보증기금</a>
+        </div>
+      </div>
+
+      <div class="leading-relaxed text-slate-500">
+        <p>[본청] (우 42724) 대구광역시 달서구 성서4차첨단로 122-11 | 대표전화 053-626-2601 | 팩스 053-626-2602</p>
+        <p>[경북북부사무소] (우 36691) 경상북도 안동시 축제5길 17, 3층 | 전화 054-853-4402</p>
+        <p class="mt-2 text-slate-600">&copy; Daegu & Gyeongbuk Regional Office of Small and Medium Enterprises and Startups. All Rights Reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 인터랙티브 스크립트 -->
+  <script>
+    // 아이콘 렌더링
+    lucide.createIcons();
+
+    // 모바일 메뉴 토글
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // 자가진단 체크리스트 DB 및 평가 로직
+    const benefitsDatabase = {
+      // 1. 신분별 기본 혜택
+      roles: {
+        startup: {
+          badge: "창업벤처 전용",
+          title: "예비·초기 창업패키지 & K-Startup 창업기업 확인",
+          desc: "시제품 제작비(최대 1억 원), 전담 멘토링, 대경청 스타트업 페스티벌 데모데이 참여 기회를 제공합니다.",
+          agency: "K-Startup / 창업진흥원",
+          url: "https://www.k-startup.go.kr"
+        },
+        merchant: {
+          badge: "소상공인 전용",
+          title: "소상공인 정책자금 융자 & 희망리턴패키지",
+          desc: "시중 은행보다 낮은 저금리 경영안정자금 및 세무·채무조정, 점포 철거비(최대 250만원) 지원을 받으실 수 있습니다.",
+          agency: "소상공인시장진흥공단",
+          url: "https://www.sbiz.or.kr"
+        },
+        sme: {
+          badge: "중소기업 전용",
+          title: "중소기업 확인서 발급 & 대경청 비즈니스지원단",
+          desc: "정부 지원사업 신청의 필수인 중소기업 확인서 즉시 발급과 세무·노무·경영 무료 현장 컨설팅을 받으실 수 있습니다.",
+          agency: "중소벤처기업부 중소기업현황정보시스템",
+          url: "https://sminfo.mss.go.kr"
+        },
+        citizen: {
+          badge: "일반 국민·청년",
+          title: "온누리상품권 최대 10% 할인 구매 & 청년 일경험 매칭",
+          desc: "전통시장 및 골목상권 온누리상품권(카드/모바일) 상시 할인 혜택과 지역 우수 강소기업 취업 정보 플랫폼을 이용하실 수 있습니다.",
+          agency: "소상공인시장진흥공단 / 대경청",
+          url: "https://www.sbiz.or.kr"
+        }
+      },
+      // 2. 필요 항목별 구체적 혜택
+      needs: {
+        funding: {
+          badge: "금융·자금",
+          title: "중소벤처기업 정책자금 & 지역신용보증재단 특례보증",
+          desc: "중진공 정책자금(창업기반, 개발기술사업화, 신시장진출자금) 및 신보·기보·대구/경북신용보증재단을 통한 저금리 특례보증을 지원합니다.",
+          linkText: "중진공 정책자금 신청포털",
+          url: "https://www.kosmes.or.kr"
+        },
+        rnd: {
+          badge: "기술·R&D",
+          title: "중소기업 기술혁신개발(첫걸음 R&D) & 제조혁신바우처",
+          desc: "R&D 첫 도전 기업 전용 평가트랙(최대 1.5억 원 연구비 보조)과 시제품 제작·기술인증·장비사용 수수료를 지원하는 바우처를 제공합니다.",
+          linkText: "중소기업 기술개발사업(SMTECH)",
+          url: "https://www.smtech.go.kr"
+        },
+        market: {
+          badge: "판로·조달",
+          title: "공공구매상담회 & 성능인증·우수조달물품 등록 지원",
+          desc: "한국수력원자력, 대구도시개발공사 등 16개 지역 공공기관 구매관과의 1:1 매칭 상담 및 중기제품 우선구매제도 혜택을 받으실 수 있습니다.",
+          linkText: "공공구매종합정보망(SMPP)",
+          url: "https://www.smpp.go.kr"
+        },
+        export: {
+          badge: "수출·글로벌",
+          title: "수출바우처사업 & 대구·경북 글로벌 강소기업 지정",
+          desc: "해외 전시회 참가, 국제 규격인증(CE, FDA 등), 바이어 매칭 번역·물류비를 정부지원금 바우처(최대 1억 원) 형태로 지원합니다.",
+          linkText: "수출지원기반활용포털",
+          url: "https://www.exportvoucher.com"
+        },
+        consulting: {
+          badge: "무료 컨설팅",
+          title: "대경중기청 비즈니스지원단 & 불공정거래 상담센터",
+          desc: "변호사, 관세사, 세무사, 노무사가 1:1 무료 상담을 진행하며, 원청기업과의 불공정 납품대금 연동제 피해 신고 및 법률자문을 제공합니다.",
+          linkText: "비즈니스지원단 바로가기",
+          url: "https://www.mss.go.kr/site/smba/fo/business/business_guide01.do"
+        },
+        recovery: {
+          badge: "스마트·재기",
+          title: "스마트상점 기술보급(키오스크 국비지원) & 희망리턴패키지",
+          desc: "테이블오더, 키오스크, 스마트미러 도입비용의 최대 70% 국비 지원 및 폐업 소상공인의 재도전을 위한 맞춤 교육과 재창업 전담 멘토링을 제공합니다.",
+          linkText: "소상공인 스마트상점 포털",
+          url: "https://www.sbiz.or.kr/smst/index.do"
+        }
+      }
+    };
+
+    function evaluateChecklist() {
+      const selectedRole = document.querySelector('input[name="userRole"]:checked')?.value;
+      const checkedNeeds = Array.from(document.querySelectorAll('input[name="needs"]:checked')).map(cb => cb.value);
+
+      const titleEl = document.getElementById('reportTitle');
+      const listContainer = document.getElementById('matchedBenefitsList');
+
+      if (!selectedRole && checkedNeeds.length === 0) {
+        titleEl.textContent = "위 설문 문항을 체크해 주시면 맞춤 지원 혜택이 도출됩니다.";
+        listContainer.innerHTML = `
+          <p class="text-sm text-slate-500 leading-relaxed">
+            현재 상황에 맞는 신분과 필요 항목을 1개 이상 선택하시면, 대구경북지방중소벤처기업청 및 유관기관에서 제공하는 핵심 수혜 프로그램과 즉시 신청 경로가 이곳에 나타납니다.
+          </p>
+        `;
+        return;
+      }
+
+      let roleName = "국민/기업";
+      if (selectedRole === 'startup') roleName = "예비·초기창업가";
+      else if (selectedRole === 'merchant') roleName = "소상공인·자영업자";
+      else if (selectedRole === 'sme') roleName = "제조·기술 중소기업";
+      else if (selectedRole === 'citizen') roleName = "일반 국민·청년";
+
+      const totalCount = (selectedRole ? 1 : 0) + checkedNeeds.length;
+      titleEl.innerHTML = `<span class="text-blue-700 font-black">[${roleName}]</span> 맞춤 지원 혜택 <strong class="text-indigo-600">${totalCount}건</strong>이 확인되었습니다.`;
+
+      let cardsHtml = '';
+
+      // 신분 기본 혜택 카드
+      if (selectedRole && benefitsDatabase.roles[selectedRole]) {
+        const item = benefitsDatabase.roles[selectedRole];
+        cardsHtml += `
+          <div class="bg-white p-5 rounded-2xl border border-blue-200 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800">${item.badge}</span>
+                <h5 class="text-base font-extrabold text-slate-900">${item.title}</h5>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">${item.desc}</p>
+              <div class="text-xs text-slate-400">주관: ${item.agency}</div>
+            </div>
+            <a href="${item.url}" target="_blank" class="self-start md:self-center px-4 py-2 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs whitespace-nowrap transition flex items-center gap-1 shadow-sm">
+              <span>자세히 보기</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        `;
+      }
+
+      // 체크한 니즈별 카드
+      checkedNeeds.forEach(needKey => {
+        const item = benefitsDatabase.needs[needKey];
+        if (item) {
+          cardsHtml += `
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4 hover:border-blue-300 transition">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-indigo-100 text-indigo-800">${item.badge}</span>
+                  <h5 class="text-base font-extrabold text-slate-900">${item.title}</h5>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">${item.desc}</p>
+              </div>
+              <a href="${item.url}" target="_blank" class="self-start md:self-center px-4 py-2 rounded-xl bg-slate-900 hover:bg-blue-700 text-white font-bold text-xs whitespace-nowrap transition flex items-center gap-1 shadow-sm">
+                <span>${item.linkText}</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          `;
+        }
+      });
+
+      listContainer.innerHTML = cardsHtml;
+      lucide.createIcons();
+    }
+
+    function resetChecklist() {
+      const radios = document.querySelectorAll('input[name="userRole"]');
+      radios.forEach(r => r.checked = false);
+
+      const checkboxes = document.querySelectorAll('input[name="needs"]');
+      checkboxes.forEach(c => c.checked = false);
+
+      evaluateChecklist();
+    }
+
+    // 주소 복사 토스트 함수
+    function copyAddr(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        const toast = document.getElementById('copyToast');
+        document.getElementById('copyToastMsg').textContent = `'${text}' 주소가 복사되었습니다.`;
+        toast.classList.remove('hidden');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 2500);
+      });
+    }
+  </script>
+</body>
+</html>
